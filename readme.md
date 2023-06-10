@@ -1,7 +1,7 @@
 
 
 
-Post запрос 
+Post запрос `http://localhost:8080/letters/putLetter`
 ```xml
 <Письмо_инопланетянам xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <код_расы>
