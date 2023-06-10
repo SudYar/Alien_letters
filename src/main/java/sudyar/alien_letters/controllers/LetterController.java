@@ -37,8 +37,8 @@ public class LetterController {
         return ResponseEntity.ok(letter);
     }
 
-    @PostMapping(value = "/putLetter", produces = MediaType.APPLICATION_XML_VALUE)
-    public ResponseEntity<FormattedLetter> putLetter(@RequestBody NoFormattedLetter letter){
+    @PostMapping(value = "/postLetter", produces = MediaType.APPLICATION_XML_VALUE)
+    public ResponseEntity<FormattedLetter> postLetter(@RequestBody NoFormattedLetter letter){
         System.out.println(letter);
         return ResponseEntity.ok(convertService.convertLetter(letter));
 
