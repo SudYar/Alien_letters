@@ -68,9 +68,10 @@ public class ConvertService {
             case "A2": hello = "Dif-tor heh smusma"; break;
             case "A3": hello = "안녕하세요"; break;
         }
+
         for (int i = 0; i< paragraphs.length; i++ ){
-            if (!"".equals(paragraphs[i]))
-                message.addParagraph(paragraphs[i].replace("Здравствуйте", hello));
+            if (!"".equals(paragraphs[i].trim()))
+                message.addParagraph(paragraphs[i].trim().replace("Здравствуйте", hello));
         }
         message.addParagraph("Надеюсь, это поможет Вам. Если у Вас есть какие-либо дополнительные вопросы, пожалуйста, не стесняйтесь спрашивать. " +
                         "С уважением, Земляне!");
